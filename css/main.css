@@ -1,0 +1,353 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: sans-serif;;
+}
+img {
+	max-width:100%;
+}
+
+/******************************************
+/* BACKGROUNDS
+/*******************************************/
+
+.bg-black {
+	background-color: #000;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-grey {
+	background-color: #ccc;
+}
+
+.bg-teal {
+	background-color: #066670;
+}
+
+.bg-image {
+	background:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.25), 
+      		rgba(0, 0, 0, 1)
+    	),
+		url("../images/background.jpg");
+	background-size: cover;	
+	background-position: center;
+	min-height: 15em;
+	padding: 1em;
+}
+
+
+.bg-about {
+	background:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.25), 
+      		rgba(0, 0, 0, 0.5)
+    	),
+		url("../images/project3/about.jpg");
+	background-size: cover;	
+	background-position: center;
+	min-height: 10em;
+	padding: 4em;
+}
+
+.bg-reservation {
+	background:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.25), 
+      		rgba(0, 0, 0, 0.5)
+    	),
+		url("../images/project3/reservation.jpg");
+	background-size: cover;	
+	background-position: center;
+	min-height: 10em;
+	padding: 4em;
+}
+
+.bg-breakfast {
+	background:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.25), 
+      		rgba(0, 0, 0, 0.5)
+    	),
+		url("../images/project3/breakfast.jpg");
+	background-size: cover;	
+	background-position: center;
+	min-height: 10em;
+	padding: 4em;
+}
+
+.bg-lunch {
+	background:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.25), 
+      		rgba(0, 0, 0, 0.5)
+    	),
+		url("../images/project3/lunch.jpg");
+	background-size: cover;	
+	background-position: bottom;
+	min-height: 10em;
+	padding: 4em;
+}
+
+.bg-dinner {
+	background:
+		linear-gradient(
+      		rgba(0, 0, 0, 0.25), 
+      		rgba(0, 0, 0, 0.5)
+    	),
+		url("../images/project3/dinner.jpg");
+	background-size: cover;	
+	background-position: center;
+	min-height: 10em;
+	padding: 4em;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 1rem 0;
+}
+.text-center {
+	text-align: center;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+.link-recent {
+	text-decoration: none;
+	color: #066670;
+	text-transform: uppercase;
+}
+
+.link-read, .link-read a  {
+	margin: 0 0 1em 0;
+	text-align: right;
+	text-decoration: none;
+	color: #066670;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.container {
+	/*max-width: 960px;*/
+	margin: 0 auto;
+}
+
+.site-header {
+	padding: 10px;
+	background-color: #ccc;
+}
+
+.site-content {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+.site-footer {
+	/*position: absolute;
+	bottom: 0;*/
+}
+
+.blog-post {
+	padding: 0 32px;
+	border-top-style: solid; 
+	border-top-width: 2px;
+	border-color: #ccc;
+}
+.blog-post p {
+	text-align: justify;
+}
+
+.menu-item {
+	margin: -3em 0;
+	padding: 3em 0;
+}
+
+/******************************************
+/* GRID
+/*******************************************/
+
+.grid-row {
+	/*max-width:1300px;*/
+	margin:0 auto;
+}
+.grid-column {
+	float:left;
+	padding:0 32px;
+}
+.grid-whole         { width:100% }
+.grid-three-quarter { width: 75% }
+.grid-two-third     { width:66.67% }
+.grid-half          { width:50% }
+.grid-third         { width:33.33% }
+.grid-quarter       { width:25% }
+
+.grid-content {
+	padding: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.grid-third {
+		width: 66.67%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.grid-third {
+		width: 100%;
+	}
+	#recentBlogs .link-recent img, .link-read {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#recentBlogs p {
+		display: none;
+	}
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* NAV STYLES                   
+/*******************************************/
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	margin: 0 0.5em;
+	border-radius: 5%;
+	background-color: #066670;
+}
+
+nav li:hover {
+	background-color: #087B87;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-active {
+	background-color: #ccc;
+	color: #066670;
+	font-weight: bold;
+}
+
+.nav-active:hover {
+	background-color: #ccc;
+}
+
+/******************************************
+/* BUTTON STYLES                   
+/*******************************************/
+
+.btn {
+	display: inline-block;
+	border-radius: 0.5em;
+	padding: 0.5em 1.25em;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.15em;
+	font-weight: bold;
+}
+
+.btn-white {
+	background-color: #fff;
+	color: #066670;
+}
+
+.btn-white:hover {
+	background-color: #F2F2F2;
+}
+
+.btn-teal {
+	background-color: #066670;
+	color: #fff;
+}
+
+.btn-teal:hover {
+	background-color: #087B87;
+}
+
+.btn-restaurant {
+	font-size: 0.75em;
+	background-color: #000;
+	text-decoration: none;
+	color: #fff;
+	margin: 0 0.25em;
+}
+
+.btn-restaurant:hover {
+	background-color: #4C4C4C;
+	cursor: pointer;
+}
